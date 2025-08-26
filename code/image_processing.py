@@ -4,10 +4,10 @@ from matplotlib import pyplot as plt
 
 from PIL import Image
 
-im = Image.open("./image.webp")
-im.save("image.png")
+#im = Image.open("./image.webp")
+#im.save("image.png")
  
-img = cv.imread('image.png', cv.IMREAD_GRAYSCALE)
+img = cv.imread('p1n.jpeg', cv.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 ret,thresh1 = cv.threshold(img,127,255,cv.THRESH_BINARY)
 
